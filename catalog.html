@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Каталог</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <header>
-      <a href="#"> <img src="img/logo-system-booking.svg" width="138" height="70" alt="Логотип системы интернет-бронирования отелей"></a>
+      <a href="#">
+        <img
+          src="img/logo-system-booking.svg"
+          width="138"
+          height="70"
+          alt="Логотип системы интернет-бронирования отелей"
+      /></a>
       <nav>
         <ul>
-          <li> <a href="#">Информация</a> </li>
-          <li> <a href="#">Фото и видео</a> </li>
-          <li> <a href="#">Карта штата</a> </li>
-          <li> <a href="catalog.html">Гостиницы</a> </li>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main>       
+    <main>
       <h1>Поиск и бронирование гостиницы</h1>
       <section>
         <h2>Фильтр поиска</h2>
@@ -25,79 +36,107 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <input type="checkbox" name="pool" id="filter-pool" checked />
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li>
-                <input type="checkbox" name="parking" id="filter-parking">
+                <input type="checkbox" name="parking" id="filter-parking" />
                 <label for="filter-parking">Парковка</label>
               </li>
               <li>
-                <input type="checkbox" name="WI-FI" id="filter-WI-FI">
+                <input type="checkbox" name="WI-FI" id="filter-WI-FI" />
                 <label for="filter-WI-FI">WI-FI</label>
               </li>
             </ul>
-          </fieldset>  
+          </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <input type="checkbox" name="hotel" id="filter-hotel" checked />
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
-                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <input type="checkbox" name="motel" id="filter-motel" checked />
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
-                <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                <input
+                  type="checkbox"
+                  name="apartments"
+                  id="filter-apartments"
+                  checked
+                />
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки, р:</legend>
-            <input type="number" name="price-min" id="min" placeholder="От 0">
+            <input type="number" name="price-min" id="min" placeholder="От 0" />
             <label for="min"></label>
-            <input type="number" name="price-max" id="max" placeholder="До 3000">
+            <input
+              type="number"
+              name="price-max"
+              id="max"
+              placeholder="До 3000"
+            />
             <label for="max"></label>
             <button type="submit">Показать</button>
           </fieldset>
-        </form>      
+        </form>
       </section>
       <section>
-        <h2>Результаты поиска</h2>
-        <p>Найдено: 3</p> <!--Наверное тройку как-то надо отделить-выделить в отдельное...т.к. это значение будет меняться-->
+        <h2>Сортировка результатов поиска</h2>
+        <p>Найдено: <span>3</span></p>
         <p>Сортировка:</p>
         <ul>
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По рейтингу</a></li>
         </ul>
+      </section>
+      <section>
+        <h2>Подобранные гостиницы</h2>
         <ul>
           <li>
             <h3><a href="#">AMARA RESORT & SPA</a></h3>
-            <img src="https://via.placeholder.com/150x100" alt="Фото AMARA RESORT & SPA" width="135" height="90">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Фото AMARA RESORT & SPA"
+              width="135"
+              height="90"
+            />
             <p>Гостиница</p>
-            <p>От 4000 р</p> <!--Я так понимаю с символом рубля позднее-->
+            <p class="room-price">От 4000 &#8381;</p>
             <button type="button">Подробнее</button>
             <button type="button">Забронировать</button>
             <p>Рейтинг: 8,5</p>
           </li>
           <li>
             <h3><a href="#">DESERT QUAIL INN</a></h3>
-            <img src="https://via.placeholder.com/150x100" alt="Фото DESERT QUAIL INN" width="135" height="90">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Фото DESERT QUAIL INN"
+              width="135"
+              height="90"
+            />
             <p>Мотель</p>
-            <p>От 3000 р</p>
+            <p class="room-price">От 3000 &#8381;</p>
             <button type="button">Подробнее</button>
             <button type="button">Забронировать</button>
             <p>Рейтинг: 8,9</p>
           </li>
           <li>
             <h3><a href="#">VILLAS AT POCO DIABLO</a></h3>
-            <img src="https://via.placeholder.com/150x100" alt="Фото VILLAS AT POCO DIABLO" width="135" height="90">
+            <img
+              src="https://via.placeholder.com/150x100"
+              alt="Фото VILLAS AT POCO DIABLO"
+              width="135"
+              height="90"
+            />
             <p>Апартаменты</p>
-            <p>От 2000 р</p>
+            <p class="room-price">От 2000 &#8381;</p>
             <button type="button">Подробнее</button>
             <button type="button">Забронировать</button>
             <p>Рейтинг: 9,2</p>
@@ -129,9 +168,14 @@
       </section>
       <p>
         Website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.jpg" width="115" height="33" alt="Логотип HTML Academy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"
+          ><img
+            src="img/logo-htmlacademy.jpg"
+            width="115"
+            height="33"
+            alt="Логотип HTML Academy"
+        /></a>
       </p>
     </footer>
-   </body>
+  </body>
 </html>
-
