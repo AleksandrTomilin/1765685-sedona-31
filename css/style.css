@@ -1,3 +1,158 @@
-.room-price {
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+:root {
+  --basic-white: #ffffff;
+  --basic-grey: #f2f2f2;
+  --basic-black: #000000;
+  --basic-grey-advantages: #eeeeee;
+  --basic-brown: #766357;
+  --basic-brown-hover: #604e43;
+  --basic-brown-active: #503e33;
+  --basic-blue: #81b3d2;
+  --background-map: #b2ce7e;
+  --font-search-active: rgba(255, 255, 255, 0.3);
+  --footer-fon: rgba(255, 255, 255, 0.9);
+}
+
+.body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-grey);
+}
+.nav {
+  width: 1200px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: var(--basic-white);
+}
+.list {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.promo__text {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.advantages__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.first,
+.second {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.advantages__caption {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.grey {
+  background-color: var(--basic-grey-advantages);
+}
+
+.recommendations__caption {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.recommendations__list {
+  list-style: none;
+}
+
+.search__question {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.search__text {
+  line-height: 24px;
+}
+
+.search__hotel {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.recommendations {
+  background-color: var(--basic-white);
+}
+
+.search {
+  background-color: var(--basic-white);
+}
+
+.search__hotel:hover,
+.search__hotel:focus {
+  background-color: var(--basic-brown-hover);
+}
+
+.search__hotel:active {
+  color: var(--font-search-active);
+  background-color: var(--basic-brown-active);
+}
+
+.map {
+  background-color: var(--background-map);
+}
+
+.footer {
+  background: var(--footer-fon);
+}
+
+.contacts {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.contacts__tel {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+.social__link {
+  text-decoration: none;
+  color: var(--basic-black);
+}
+
+.social__item {
+  list-style: none;
 }
