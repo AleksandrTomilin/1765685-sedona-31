@@ -21,11 +21,19 @@
           alt="Логотип системы интернет-бронирования отелей"
       /></a>
       <nav class="nav">
-        <ul class="list">
-          <li class="item"><a href="#">Информация</a></li>
-          <li class="item"><a href="#">Фото и видео</a></li>
-          <li class="item"><a href="#">Карта штата</a></li>
-          <li class="item"><a href="catalog.html">Гостиницы</a></li>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Информация</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фото и видео</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Карта штата</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -40,33 +48,31 @@
           height="509"
           alt="Неповторимые виды окрестностей Седоны"
         />
-        <p class="promo__text">
+        <p class="promo__info">
           Седона - небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p class="promo__text">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
       </section>
       <section class="advantages">
         <h2 class="advantages__title visually-hidden">
           Преимущества городка Седона
         </h2>
-        <p class="advantages__text">
-          Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages__item first">
-            <h3 class="advantages__caption">Настоящий городок</h3>
-            <p class="advantages__number">-№1-</p>
-            <p class="advantages__thesis">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
-            <img
-              class="advantages__image"
-              src="img/house-sedona.jpg"
-              height="256"
-              width="800"
-              alt="Виды улочек"
-            />
-          </li>
-        </ul>
+        <div class="advantages__blue">
+          <h3 class="advantages__caption">Настоящий городок</h3>
+          <p class="advantages__number">-№1-</p>
+          <p class="advantages__thesis">
+            Седона — не аттракцион для туристов, там течёт своя жизнь
+          </p>
+          <img
+            class="advantages__image"
+            src="img/house-sedona.jpg"
+            height="256"
+            width="800"
+            alt="Виды улочек"
+          />
+        </div>
         <section class="recommendations">
           <h2 class="recommendations__title visually-hidden">Рекомендации</h2>
           <ul class="recommendations__list">
@@ -108,22 +114,20 @@
             </li>
           </ul>
         </section>
-        <ul class="advantages__list">
-          <li class="advantages__item second">
-            <h3 class="advantages__caption">Там есть мост дьявола</h3>
-            <p class="advantages__number">-№2-</p>
-            <p class="advantages__thesis">
-              Да, по нему можно пройти! Если конечно вы осмелитесь
-            </p>
-            <img
-              class="advantages__image"
-              src="img/bridge.jpg"
-              height="256"
-              width="800"
-              alt="Мост"
-            />
-          </li>
-        </ul>
+        <div class="advantages__blue">
+          <h3 class="advantages__caption">Там есть мост дьявола</h3>
+          <p class="advantages__number">-№2-</p>
+          <p class="advantages__thesis">
+            Да, по нему можно пройти! Если конечно вы осмелитесь
+          </p>
+          <img
+            class="advantages__image"
+            src="img/bridge.jpg"
+            height="256"
+            width="800"
+            alt="Мост"
+          />
+        </div>
         <div class="grey">
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -204,7 +208,6 @@
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/htmlcss"
           ><img
-            a
             class="copyright__logo"
             src="img/logo-htmlacademy.svg"
             width="115"

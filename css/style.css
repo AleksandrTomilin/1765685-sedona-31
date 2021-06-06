@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("..\fonts\PTSans.woff2") format("woff2"),
+    url("..\fonts\PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("..\fonts\PTSans-Bold.woff2") format("woff2"),
+    url("..\fonts\PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
   --basic-white: #ffffff;
   --basic-grey: #f2f2f2;
@@ -9,7 +25,7 @@
   --basic-blue: #81b3d2;
   --background-map: #b2ce7e;
   --font-search-active: rgba(255, 255, 255, 0.3);
-  --footer-fon: rgba(255, 255, 255, 0.9);
+  --footer-background: rgba(255, 255, 255, 0.9);
 }
 
 .body {
@@ -31,10 +47,10 @@
   font-weight: 700;
   background-color: var(--basic-white);
 }
-.list {
+.nav__list {
   list-style: none;
 }
-.nav a {
+.nav__link {
   text-decoration: none;
   color: var(--basic-black);
 }
@@ -50,20 +66,23 @@
   clip: rect(0 0 0 0);
 }
 
-.promo__text {
+.promo {
+  background-color: var(--basic-white);
+}
+
+.promo__info {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
 
-.advantages__text {
+.promo__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
 }
 
-.first,
-.second {
+.advantages__blue {
   color: var(--basic-white);
   background-color: var(--basic-blue);
 }
@@ -135,7 +154,7 @@
 }
 
 .footer {
-  background: var(--footer-fon);
+  background: var(--footer-background);
 }
 
 .contacts {
